@@ -1,0 +1,33 @@
+---
+const { imgHero } = Astro.props;
+---
+
+<section
+  class="heroSection w-full h-screen flex items-center justify-between gap-3 px-20"
+>
+  <div class="flex grow basis-1 flex-col gap-5 ">
+    <h1 class="text-[32px] font-bold font-[Amiko]">
+      Zapatillas Adidas Edición Especial
+    </h1>
+    <p
+      class="text-[20px] text-justify font-[Amiko] text-[#00000086] uppercase font-semibold pe-[170px]"
+    >
+      Experimenta la comodidad que se adapta a tu ritmo. Un diseño exclusivo con
+      materiales premium para ofrecerte lo mejor en cada paso que des.
+    </p>
+    <a
+      href="#"
+      class="rounded-[10px] bg-black px-[5px] text-center py-[14px] text-white 
+      w-50 uppercase"
+      >Explorar colección</a
+    >
+  </div>
+  <div class="flex grow basis-1 items-center justify-center">
+    <img src={imgHero} alt="imagenHero" class="w-full" />
+  </div>
+</section>
+<style>
+  .heroSection {
+    background: linear-gradient(180deg, #f0f0f0 26%, #d9d9d9 90%);
+  }
+</style>
